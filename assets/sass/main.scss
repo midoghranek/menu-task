@@ -1,0 +1,26 @@
+$bg: #29576b;
+$text: #ffffff;
+
+@import "fonts";
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  * {
+    box-sizing: border-box;
+  }
+  .show {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  .box {
+    max-width: 1640px;
+    margin: auto;
+  }
+}
+
+@import "hero";

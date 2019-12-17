@@ -1,0 +1,88 @@
+header {
+  position: relative;
+  z-index: 20;
+  .box {
+    position: relative;
+  }
+  &.active {
+    background-color: #fff;
+    .logo h1 {
+      color: #222;
+    }
+    .inner-header .header-left nav ul li {
+      color: #555;
+    }
+    .inner-header .search .search-icon {
+      color: #222;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: 80px;
+      background-color: #ddd;
+      z-index: 20;
+    }
+    .close-icon {
+      display: block;
+    }
+  }
+  .inner-header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    .header-left {
+      display: flex;
+      .logo {
+        h1 {
+          margin: 0;
+          font-weight: 900;
+          font-size: 25px;
+          line-height: 80px;
+          text-transform: uppercase;
+          height: 80px;
+        }
+      }
+      @import "menu";
+    }
+    .search {
+      .search-icon {
+        height: 80px;
+        display: block;
+        color: #fff;
+        line-height: 80px;
+        font-size: 18px;
+      }
+    }
+  }
+  @import "blocks";
+  #closi {
+    background-color: #293e40;
+    cursor: pointer;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 56px;
+    transition: opacity 0.2s;
+    z-index: 1;
+    &.active {
+      opacity: 0.7;
+      bottom: 0;
+      top: 80px;
+    }
+  }
+  .close-icon {
+    position: absolute;
+    right: 0;
+    display: block;
+    color: #222;
+    font-size: 30px;
+    z-index: 80;
+    opacity: 0.8;
+    top: 110px;
+    cursor: pointer;
+    display: none;
+  }
+}

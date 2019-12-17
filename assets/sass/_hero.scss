@@ -1,0 +1,53 @@
+.hero {
+  @import "bg";
+  background: $bg;
+  color: $text;
+  min-height: 100vh;
+  @import "header";
+  .inner-hero {
+    position: relative;
+    z-index: 2;
+    .art {
+      position: absolute;
+      top: 50px;
+      left: 765px;
+      width: 1015px;
+      height: 526px;
+      background: transparent url("/assets/images/HTML_CSS_undraw.svg") 0% 0%
+        no-repeat padding-box;
+    }
+    .content {
+      margin-top: 120px;
+      max-width: 450px;
+      h2 {
+        font-weight: 100;
+        font-size: 81px;
+        line-height: 121px;
+        text-transform: uppercase;
+        margin: 0;
+        margin-bottom: 40px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 27px;
+        opacity: 0.72;
+        margin-top: 0;
+        margin-bottom: 50px;
+      }
+      .hire {
+        width: 208px;
+        height: 65px;
+        line-height: 65px;
+        display: block;
+        text-align: center;
+        font-weight: 900;
+        font-size: 20px;
+        color: #1489a0;
+        text-transform: uppercase;
+        background-color: #ffffff;
+        border-radius: 40px;
+        text-decoration: none;
+      }
+    }
+  }
+}

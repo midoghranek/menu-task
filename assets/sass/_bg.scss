@@ -1,0 +1,23 @@
+.bg {
+  .small {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 676px;
+    height: 100vh;
+    background-color: #1b6180;
+    z-index: 1;
+  }
+  .path {
+    position: absolute;
+    display: block;
+    background: transparent url("/assets/images/Path23.svg") 0% 0% no-repeat
+      padding-box;
+    width: 2134px;
+    height: 949px;
+    top: -28.6038818359375px;
+    left: -630.1412353515625px;
+    z-index: 2;
+  }
+}
